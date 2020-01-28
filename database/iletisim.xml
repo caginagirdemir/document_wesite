@@ -1,0 +1,40 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 3.5.2.2
+- http://www.phpmyadmin.net
+-
+- Anamakine: localhost
+- Üretim Zamanı: 05 Eki 2016, 16:55:34
+- Sunucu sürümü: 10.0.20-MariaDB
+- PHP Sürümü: 5.2.17
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="u392064796_db" collation="utf8_unicode_ci" charset="utf8">
+            <pma:table name="iletisim">
+                CREATE TABLE `iletisim` (
+                  `Id` int(11) NOT NULL AUTO_INCREMENT,
+                  `isim` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+                  `mail` varchar(100) COLLATE utf8_turkish_ci NOT NULL,
+                  `icerik` varchar(3000) COLLATE utf8_turkish_ci NOT NULL,
+                  `tarih` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  `oy` varchar(20) COLLATE utf8_turkish_ci NOT NULL,
+                  PRIMARY KEY (`Id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Veritabanı: 'u392064796_db'
+    -->
+    <database name="u392064796_db">
+        <!-- Tablo iletisim -->
+    </database>
+</pma_xml_export>

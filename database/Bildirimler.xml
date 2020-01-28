@@ -1,0 +1,78 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 3.5.2.2
+- http://www.phpmyadmin.net
+-
+- Anamakine: localhost
+- Üretim Zamanı: 05 Eki 2016, 16:55:47
+- Sunucu sürümü: 10.0.20-MariaDB
+- PHP Sürümü: 5.2.17
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="u392064796_db" collation="utf8_unicode_ci" charset="utf8">
+            <pma:table name="Bildirimler">
+                CREATE TABLE `Bildirimler` (
+                  `Id` int(11) NOT NULL AUTO_INCREMENT,
+                  `baslik` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+                  `icerik` varchar(3000) COLLATE utf8_turkish_ci NOT NULL,
+                  `tarih` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  `eksay` int(11) NOT NULL,
+                  `Ek1` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+                  `Ek2` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+                  `Ek3` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+                  PRIMARY KEY (`Id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Veritabanı: 'u392064796_db'
+    -->
+    <database name="u392064796_db">
+        <!-- Tablo Bildirimler -->
+        <table name="Bildirimler">
+            <column name="Id">18</column>
+            <column name="baslik">Bootstrap</column>
+            <column name="icerik">Bootstrap geliştiricilerine teşekkür ederim. Site bu alt yapı üzerine hazırlanmıştır.&lt;/br&gt;&lt;/br&gt;
+Detaylı Bilgi için www.w3schools.com/bootstrap/ sayfasına bakabilirsiniz.</column>
+            <column name="tarih">2016-09-12 07:38:27</column>
+            <column name="eksay">0</column>
+            <column name="Ek1"></column>
+            <column name="Ek2"></column>
+            <column name="Ek3"></column>
+        </table>
+        <table name="Bildirimler">
+            <column name="Id">17</column>
+            <column name="baslik">İyi Bayramlar</column>
+            <column name="icerik">Kurban Bayramınız Kutlu Olsun.
+
+12/08/2016 1.gün
+13/08/2016 2.gün
+14/08/2016 3.gün
+15/08/2016 4.gün</column>
+            <column name="tarih">2016-09-11 22:47:01</column>
+            <column name="eksay">1</column>
+            <column name="Ek1">bayramkarti.jpg</column>
+            <column name="Ek2"></column>
+            <column name="Ek3"></column>
+        </table>
+        <table name="Bildirimler">
+            <column name="Id">20</column>
+            <column name="baslik">Satılık elektrikli su ısıtıcısı</column>
+            <column name="icerik">1 sene kadar kullanılmıştır. Baymak markadır. 50 TL dir. Facebooktan iletişime geçebilirsiniz.</column>
+            <column name="tarih">2016-09-17 17:34:18</column>
+            <column name="eksay">3</column>
+            <column name="Ek1">isitici1.jpg</column>
+            <column name="Ek2">isitici2.jpg</column>
+            <column name="Ek3">isitici3.jpg</column>
+        </table>
+    </database>
+</pma_xml_export>
